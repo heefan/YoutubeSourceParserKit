@@ -99,10 +99,12 @@ open class Youtube: NSObject {
      @return dictionary with the available formats for the selected video
      
      */
-    open static func h264videosWithYoutubeID(_ youtubeID: String) -> [String: AnyObject]? {
+    open static func h264videosWithYoutubeID(_ youtubeID: String) -> [String: AnyObject]?
+    {
         let urlString = String(format: "%@%@", infoURL, youtubeID) as String
         let url = URL(string: urlString)!
-        let request = NSMutableURLRequest(url: url)
+        var request = URLRequest(url:url)
+        
         request.timeoutInterval = 5.0
         request.setValue(userAgent, forHTTPHeaderField: "User-Agent")
         request.httpMethod = "GET"
@@ -110,12 +112,12 @@ open class Youtube: NSObject {
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let group = DispatchGroup()
         group.enter()
-        session.dataTask(with: request as URLRequest) { data,response,error in
+        session.dataTask(with: request, completionHandler: { (data, response, _) -> Void in
             if let data = data as Data? {
-                responseString = NSString(data: data, encoding: String.Encoding.utf8.rawValue)!
+                responseString = String(data: data, encoding: .utf8)! as NSString
             }
             group.leave()
-        }.resume()
+        }).resume()
         group.wait(timeout: DispatchTime.distantFuture)
         let parts = responseString.dictionaryFromQueryStringComponents()
         if parts.count > 0 {
@@ -124,11 +126,12 @@ open class Youtube: NSObject {
             if let title = parts["title"] as? String {
                 videoTitle = title
             }
+            
             if let image = parts["iurl"] as? String {
                 streamImage = image
             }
+            
             if let fmtStreamMap = parts["url_encoded_fmt_stream_map"] as? String {
-                // Live Stream
                 if let _: AnyObject = parts["live_playback"]{
                     if let hlsvp = parts["hlsvp"] as? String {
                         return [
@@ -142,13 +145,13 @@ open class Youtube: NSObject {
                     let fmtStreamMapArray = fmtStreamMap.components(separatedBy: ",")
                     for videoEncodedString in fmtStreamMapArray {
                         var videoComponents = videoEncodedString.dictionaryFromQueryStringComponents()
-                        videoComponents["title"] = videoTitle as AnyObject
-                        videoComponents["isStream"] = false as AnyObject
+                        videoComponents["title"] = videoTitle as AnyObject?
                         return videoComponents as [String: AnyObject]
                     }
                 }
             }
         }
+        
         return nil
     }
     
@@ -159,19 +162,25 @@ open class Youtube: NSObject {
      @param completeBlock the block which is called on completion
      
      */
-    open static func h264videosWithYoutubeURL(_ youtubeURL: URL,completion: ((
-        _ videoInfo: [String: AnyObject]?, _ error: NSError?) -> Void)?) {
+    open static func h264videosWithYoutubeURL(_ youtubeURL: URL,
+                                              completion: ((_ videoInfo: [String: AnyObject]?, _ error: NSError?) -> Void)?)
+    {
         let priority = DispatchQueue.GlobalQueuePriority.background
         DispatchQueue.global(priority: priority).async {
-            if let youtubeID = self.youtubeIDFromYoutubeURL(youtubeURL), let videoInformation = self.h264videosWithYoutubeID(youtubeID) {
+            if let youtubeID = self.youtubeIDFromYoutubeURL(youtubeURL),
+                let videoInformation = self.h264videosWithYoutubeID(youtubeID) {
                 DispatchQueue.main.async {
                     completion?(videoInformation, nil)
                 }
             }else{
                 DispatchQueue.main.async {
-                    completion?(nil, NSError(domain: "com.player.youtube.backgroundqueue", code: 1001, userInfo: ["error": "Invalid YouTube URL"]))
+                    completion?(nil,
+                                NSError(domain: "com.player.youtube.backgroundqueue",
+                                        code: 1001,
+                                        userInfo: ["error": "Invalid YouTube URL"]))
                 }
             }
         }
+        
     }
 }

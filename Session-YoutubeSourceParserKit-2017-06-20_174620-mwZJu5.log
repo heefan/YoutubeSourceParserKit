@@ -1,0 +1,375 @@
+17:46:20.189 Xcode[10490:48485] Beginning test session YoutubeSourceParserKit-385F7A5B-5F9B-4AA4-83EA-B09F52C98372 at 2017-06-20 17:46:20.189 with Xcode 8E2002 on target <DVTiPhoneSimulator: 0x7fc12763c510> {
+		SimDevice: SimDevice : iPhone 7 Plus (4316CA60-8040-446B-82D5-2851BD830D0B) : state={ Booted } deviceType={ SimDeviceType : com.apple.CoreSimulator.SimDeviceType.iPhone-7-Plus } runtime={ SimRuntime : 10.3 (14E269) - com.apple.CoreSimulator.SimRuntime.iOS-10-3 }
+} (10.3 (14E269))
+17:46:20.189 Xcode[10490:48485] Launching with Xcode.DebuggerFoundation.Launcher.LLDB
+17:46:20.189 Xcode[10490:313482] Sim iPhone 7 Plus: Unregistering for sim device notification with token 136
+17:46:20.189 Xcode[10490:313482] Calling -[SimDevice getenv:error:] for TESTMANAGERD_SIM_SOCK
+17:46:20.190 Xcode[10490:313482] Sim iPhone 7 Plus has testmanagerd socket at /private/tmp/com.apple.launchd.1TOHvEAKRV/com.apple.testmanagerd.unix-domain.socket
+17:46:20.190 Xcode[10490:313482] Validating test connection socket path (/private/tmp/com.apple.launchd.1TOHvEAKRV/com.apple.testmanagerd.unix-domain.socket)
+17:46:20.190 Xcode[10490:313482] Constructing transport for test connection socket
+17:46:20.190 Xcode[10490:313482] Connected socket 49 to testmanagerd for Sim iPhone 7 Plus
+17:46:20.190 Xcode[10490:313482] Received connection for test runner session
+17:46:20.190 Xcode[10490:313482] Listening for proxy connection request from the test bundle
+17:46:20.191 Xcode[10490:313482] Initiating session with identifier: 385F7A5B-5F9B-4AA4-83EA-B09F52C98372
+17:46:20.214 Xcode[10490:48485] Received Ready from iOSSimulator
+17:46:20.214 Xcode[10490:48485] Sending notification: NSConcreteNotification 0x7fc12e315000 {name = com.apple.iphonesimulator.startSession; userInfo = {
+    deviceUDID = "4316CA60-8040-446B-82D5-2851BD830D0B";
+}}
+17:46:20.237 Xcode[10490:48485] Test runner session acquired connection.
+17:46:20.237 Xcode[10490:48485] Waiting for test process to launch.
+17:46:20.319 Xcode[10490:48485] Launch session started.
+17:46:20.344 Xcode[10490:312455] Got reply to session initiation request with identifier 385F7A5B-5F9B-4AA4-83EA-B09F52C98372 (result:error): 22: (null)
+17:46:20.370 Xcode[10490:48485] Received Ready from iOSSimulator
+17:46:20.371 Xcode[10490:48485] Sending notification: NSConcreteNotification 0x7fc11179b8b0 {name = com.apple.iphonesimulator.startSession; userInfo = {
+    deviceUDID = "4316CA60-8040-446B-82D5-2851BD830D0B";
+}}
+17:46:20.375 Xcode[10490:312455] 4316CA60-8040-446B-82D5-2851BD830D0B: Registered for sim device notification, got token 137
+17:46:20.376 Xcode[10490:313476] 4316CA60-8040-446B-82D5-2851BD830D0B: Unregistering for sim device notification with token 137
+17:46:20.376 Xcode[10490:313479] 4316CA60-8040-446B-82D5-2851BD830D0B: Installing app at path: /Users/username/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator/YoutubeSourceParserKit.app and options: {
+    CFBundleIdentifier = "com.dundaralp.YoutubeSourceParserKit";
+}
+17:46:20.387 Xcode[10490:48485] Adding console adaptor <IDEConsoleAdaptor: 0x7fc12e3176a0 'target'> for test session 385F7A5B-5F9B-4AA4-83EA-B09F52C98372.
+17:46:20.387 Xcode[10490:48485] Received Ready from iOSSimulator
+17:46:20.387 Xcode[10490:48485] Sending notification: NSConcreteNotification 0x7fc112b30260 {name = com.apple.iphonesimulator.startSession; userInfo = {
+    deviceUDID = "4316CA60-8040-446B-82D5-2851BD830D0B";
+}}
+17:46:25.026 Xcode[10490:313479] 4316CA60-8040-446B-82D5-2851BD830D0B: Installed app at path: /Users/username/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator/YoutubeSourceParserKit.app and options: {
+    CFBundleIdentifier = "com.dundaralp.YoutubeSourceParserKit";
+}
+17:46:25.027 Xcode[10490:313479] 4316CA60-8040-446B-82D5-2851BD830D0B: Launching app with identifier: com.dundaralp.YoutubeSourceParserKit and options: {
+    arguments =     (
+        "-NSTreatUnknownArgumentsAsOpen",
+        NO,
+        "-ApplePersistenceIgnoreState",
+        YES
+    );
+    environment =     {
+        "DYLD_FRAMEWORK_PATH" = "/Users/username/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator:/Users/litian/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/Developer/Library/PrivateFrameworks";
+        "DYLD_INSERT_LIBRARIES" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/Developer/Library/PrivateFrameworks/DTDDISupport.framework/libViewDebuggerSupport.dylib:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/IDEBundleInjection.framework/IDEBundleInjection";
+        "DYLD_LIBRARY_PATH" = "/Users/username/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator:/Users/litian/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/Developer/Library/PrivateFrameworks";
+        NSUnbufferedIO = YES;
+        "OS_ACTIVITY_DT_MODE" = YES;
+        XCInjectBundleInto = "/Users/username/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator/YoutubeSourceParserKit.app/YoutubeSourceParserKit";
+        "XCODE_DBG_XPC_EXCLUSIONS" = "com.apple.dt.xctestSymbolicator";
+        XCTestConfigurationFilePath = "/var/folders/h2/71_bt9mn6qg_0k5rqx13ng600000gn/T/com.apple.dt.XCTest/385F7A5B-5F9B-4AA4-83EA-B09F52C98372/remote-container/tmp/YoutubeSourceParserKit-385F7A5B-5F9B-4AA4-83EA-B09F52C98372.xctestconfiguration";
+        "__XCODE_BUILT_PRODUCTS_DIR_PATHS" = "/Users/username/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator";
+        "__XPC_DYLD_FRAMEWORK_PATH" = "/Users/username/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator";
+        "__XPC_DYLD_LIBRARY_PATH" = "/Users/username/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator";
+    };
+    stderr = "/dev/ttys004";
+    stdout = "/dev/ttys004";
+    "wait_for_debugger" = 1;
+}
+17:46:25.062 Xcode[10490:313475] 4316CA60-8040-446B-82D5-2851BD830D0B: Launched app with identifier: com.dundaralp.YoutubeSourceParserKit (pid = 53915)
+17:46:25.062 Xcode[10490:313475] Tracking pid 53915 for simulator <DVTiPhoneSimulator: 0x7fc12763c510> {
+		SimDevice: SimDevice : iPhone 7 Plus (4316CA60-8040-446B-82D5-2851BD830D0B) : state={ Booted } deviceType={ SimDeviceType : com.apple.CoreSimulator.SimDeviceType.iPhone-7-Plus } runtime={ SimRuntime : 10.3 (14E269) - com.apple.CoreSimulator.SimRuntime.iOS-10-3 }
+}
+17:46:25.062 Xcode[10490:313475] Checking to see if pid 53915 is valid: kill(pid, 0) = 0 (YES, it's still running)
+17:46:25.062 Xcode[10490:313475] Setting up DVTTaskNotifyOnProcDeath for pid 53915
+17:46:25.062 Xcode[10490:48485] Test process runnable PID is 53915.
+17:46:26.769 Xcode[10490:48485] Waiting for test process to check in..., will wait up to 120s
+17:46:27.050 Xcode[10490:313680] Handling proxy channel request from test runner
+17:46:27.050 Xcode[10490:313680] Test runner is ready, running protocol 22, requires at least version 8. Control framework is running 22 and requires at least 8
+17:46:27.050 Xcode[10490:48485] Test runner session successfully initiated.
+17:46:27.050 Xcode[10490:48485] Creating the daemon control session.
+17:46:27.051 Xcode[10490:48485] Whitelisting test process ID 53915
+17:46:27.051 Xcode[10490:48485] Got authorization request for pid 53915
+17:46:27.052 Xcode[10490:313475] Requesting authorization for pid 53915
+17:46:27.055 Xcode[10490:313476] Got reply to authorization request for pid 53915 (result:error): 22: (null)
+17:46:20.336 testmanagerd[53912:313935] Launched testmanagerd from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/libexec/testmanagerd, modified on Thursday, April 13, 2017 at 2:44:16 AM Singapore Standard Time
+17:46:27.056 Xcode[10490:48485] Got whitelisting response from test daemon. Success: 1
+17:46:20.338 testmanagerd[53912:313939] IDE connected over socket 5 (-[XCTestManagerIDEServer listenForControlConnectionsOverNamedSocket]_block_invoke)
+17:46:20.338 testmanagerd[53912:313935] Setting availability state.
+17:46:20.339 testmanagerd[53912:313939] Created session with socket 5
+17:46:20.339 testmanagerd[53912:313935] Posting availability to test bundles...
+17:46:20.342 testmanagerd[53912:313942] Handled a proxy request from the IDE with session <XCIDESession: 0x7f8480c19f40> created Tuesday, June 20, 2017 at 5:46:20 PM Singapore Standard Time proxy <_DTXProxy: 0x7f8480c1aea0>
+17:46:20.343 testmanagerd[53912:313935] -[XCIDESession _IDE_initiateSessionWithIdentifier:forClient:atPath:protocolVersion:]_block_invoke 385F7A5B-5F9B-4AA4-83EA-B09F52C98372 1 5 from client C7A78A87-B750-4DAA-A48E-E8D0F7DD1EA9-10490-00000ADB7A816CA0 (/Applications/Xcode.app)
+17:46:20.344 testmanagerd[53912:313942] -[XCTDaemon setIDESession:forIdentifier:]_block_invoke <XCIDESession: 0x7f8480c19f40> created Tuesday, June 20, 2017 at 5:46:20 PM Singapore Standard Time for client C7A78A87-B750-4DAA-A48E-E8D0F7DD1EA9-10490-00000ADB7A816CA0 waiting to pair with test session 385F7A5B-5F9B-4AA4-83EA-B09F52C98372 -> 385F7A5B-5F9B-4AA4-83EA-B09F52C98372
+17:46:20.344 testmanagerd[53912:313942] -[XCTDaemon _queue_handleRequestForSessionWithIdentifier:]
+17:46:25.425 testmanagerd[53912:313942] Considering exiting:
+17:46:25.426 testmanagerd[53912:313942] Session summary: 0 test sessions, 1 sessions with identifiers, 0 unidentified sessions, does not have control session
+17:46:25.426 testmanagerd[53912:313942] Unpaired test sessions: {
+    "385F7A5B-5F9B-4AA4-83EA-B09F52C98372" = "<XCIDESession: 0x7f8480c19f40> created Tuesday, June 20, 2017 at 5:46:20 PM Singapore Standard Time for client C7A78A87-B750-4DAA-A48E-E8D0F7DD1EA9-10490-00000ADB7A816CA0 waiting to pair with test session 385F7A5B-5F9B-4AA4-83EA-B09F52C98372";
+}
+17:46:26.931 testmanagerd[53912:313942] Received new test session connection from process with PID 53915
+17:46:26.937 testmanagerd[53912:313935] Initial orientation 0
+17:46:26.940 testmanagerd[53912:314114] Test session 385F7A5B-5F9B-4AA4-83EA-B09F52C98372 requested socket (-[XCTestSession _XCT_requestSocketForSessionIdentifier:reply:])
+17:46:26.940 testmanagerd[53912:314113] Test session 385F7A5B-5F9B-4AA4-83EA-B09F52C98372 requested socket (-[XCTDaemon requestSocketForSessionIdentifier:reply:]_block_invoke)
+17:46:26.940 testmanagerd[53912:314113] -[XCTDaemon _queue_handleRequestForSessionWithIdentifier:]
+17:46:26.940 testmanagerd[53912:314113] Closing IDE connection before sending socket 7 to test host.
+17:46:26.940 testmanagerd[53912:314113] -[XCIDESession closeIDEConnection:] sending barrier
+17:46:26.941 testmanagerd[53912:313935] barrier flushed, closing DTXConnection to IDE, socket will not be closed
+17:46:26.941 testmanagerd[53912:314113] DTXSocketTransport disconnected, owner is <XCIDESession: 0x7f8480c19f40> created Tuesday, June 20, 2017 at 5:46:20 PM Singapore Standard Time for client C7A78A87-B750-4DAA-A48E-E8D0F7DD1EA9-10490-00000ADB7A816CA0 waiting to pair with test session 385F7A5B-5F9B-4AA4-83EA-B09F52C98372
+17:46:27.061 testmanagerd[53912:313935] Received request to collect crash reports in directories '/Users/username/Library/Logs/DiagnosticReports', '/Library/Logs/DiagnosticReports' for processes with names 'XCTRunner', 'YoutubeSourceParserKit', 'xctest'
+17:46:26.942 testmanagerd[53912:314113] -[XCTDaemon closeIDESession:]_block_invoke <XCIDESession: 0x7f8480c19f40> created Tuesday, June 20, 2017 at 5:46:20 PM Singapore Standard Time for client C7A78A87-B750-4DAA-A48E-E8D0F7DD1EA9-10490-00000ADB7A816CA0 waiting to pair with test session 385F7A5B-5F9B-4AA4-83EA-B09F52C98372
+17:46:26.942 testmanagerd[53912:314113] Considering exiting:
+17:46:26.942 testmanagerd[53912:314113] Session summary: 1 test sessions, 0 sessions with identifiers, 0 unidentified sessions, does not have control session
+17:46:27.063 testmanagerd[53912:313935] Initializing crash report observer for /Users/username/Library/Logs/DiagnosticReports
+17:46:26.944 testmanagerd[53912:314113] app info {
+    BKSApplicationStateAppIsFrontmost = 1;
+    BKSApplicationStateExtensionKey = 0;
+    SBApplicationStateDisplayIDKey = "com.dundaralp.YoutubeSourceParserKit";
+    SBApplicationStateKey = 8;
+    SBApplicationStateProcessIDKey = 53915;
+    SBMostElevatedStateForProcessID = 8;
+}
+17:46:26.945 testmanagerd[53912:314113] Got request for process assertion for pid 53915.
+17:46:26.947 testmanagerd[53912:313942] Got reply for process assertion request, success: YES
+17:46:26.946 testmanagerd[53912:314113] Created process assertion for pid 53915: <BKSProcessAssertion: 0x7f8480f07ab0>, waiting for response from assertiond.
+17:46:26.948 testmanagerd[53912:314113] Starting to monitor com.dundaralp.YoutubeSourceParserKit
+17:46:26.950 testmanagerd[53912:313943] Got application state update: com.dundaralp.YoutubeSourceParserKit (53915) -> 8
+17:46:27.047 testmanagerd[53912:313935] Sending socket 7 to test host
+17:46:27.048 testmanagerd[53912:313942] -[XCTDaemon closeIDESession:]_block_invoke <XCIDESession: 0x7f8480c19f40> created Tuesday, June 20, 2017 at 5:46:20 PM Singapore Standard Time for client C7A78A87-B750-4DAA-A48E-E8D0F7DD1EA9-10490-00000ADB7A816CA0 waiting to pair with test session 385F7A5B-5F9B-4AA4-83EA-B09F52C98372
+17:46:27.049 testmanagerd[53912:313942] Considering exiting:
+17:46:27.050 testmanagerd[53912:313942] Session summary: 1 test sessions, 0 sessions with identifiers, 0 unidentified sessions, does not have control session
+17:46:27.051 testmanagerd[53912:313942] IDE connected over socket 6 (-[XCTestManagerIDEServer listenForControlConnectionsOverNamedSocket]_block_invoke)
+17:46:27.052 testmanagerd[53912:313942] Created session with socket 6
+17:46:27.053 testmanagerd[53912:314114] Handled a proxy request from the IDE with session <XCIDESession: 0x7f8480e1c230> created Tuesday, June 20, 2017 at 5:46:27 PM Singapore Standard Time proxy <_DTXProxy: 0x7f8480f0b3f0>
+17:46:27.054 testmanagerd[53912:314114] -[XCIDESession _IDE_initiateControlSessionForTestProcessID:protocolVersion:] 53915 22
+17:46:27.054 testmanagerd[53912:313935] Set control session <XCIDESession: 0x7f8480e1c230> created Tuesday, June 20, 2017 at 5:46:27 PM Singapore Standard Time with proto 22 and proxy <_DTXProxy: 0x7f8480f0b3f0>
+17:46:27.064 testmanagerd[53912:313935] Getting files in /Users/username/Library/Logs/DiagnosticReports
+17:46:27.069 testmanagerd[53912:313935] Found 21 files in /Users/username/Library/Logs/DiagnosticReports
+17:46:27.070 testmanagerd[53912:313935] Started monitoring /Users/username/Library/Logs/DiagnosticReports
+17:46:27.071 testmanagerd[53912:313935] Initializing crash report observer for /Library/Logs/DiagnosticReports
+17:46:27.072 testmanagerd[53912:313935] Getting files in /Library/Logs/DiagnosticReports
+17:46:27.073 testmanagerd[53912:313935] Found 20 files in /Library/Logs/DiagnosticReports
+17:46:27.074 testmanagerd[53912:313935] Started monitoring /Library/Logs/DiagnosticReports
+Test Suite 'Selected tests' started at 2017-06-20 17:46:27.079
+Test Suite 'YoutubeSourceParserKit.xctest' started at 2017-06-20 17:46:27.080
+Test Suite 'YoutubeSourceParserKitTests' started at 2017-06-20 17:46:27.080
+17:46:26.924 YoutubeSourceParserKit[53915:313995] Linked XCTest.framework from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/XCTest, built with Xcode 0832(), modified on Thursday, April 13, 2017 at 2:49:44 AM Singapore Standard Time
+17:46:26.924 YoutubeSourceParserKit[53915:313995] XCTest.framework bundle version: 12124
+17:46:26.925 YoutubeSourceParserKit[53915:313995] System uptime: 7:46:37
+17:46:26.925 YoutubeSourceParserKit[53915:313995] Process arguments: (
+    "/Users/username/Library/Developer/CoreSimulator/Devices/4316CA60-8040-446B-82D5-2851BD830D0B/data/Containers/Bundle/Application/88DCDB47-0F1F-4C0B-9EE6-A7153BB739C6/YoutubeSourceParserKit.app/YoutubeSourceParserKit",
+    "-NSTreatUnknownArgumentsAsOpen",
+    NO,
+    "-ApplePersistenceIgnoreState",
+    YES
+)
+17:46:26.925 YoutubeSourceParserKit[53915:313995] Process environment: {
+    "CFFIXED_USER_HOME" = "/Users/username/Library/Developer/CoreSimulator/Devices/4316CA60-8040-446B-82D5-2851BD830D0B/data/Containers/Data/Application/42A887BC-AA73-4B70-89AE-FC2456F93825";
+    CLASSIC = 2;
+    "CUPS_SERVER" = "/private/tmp/com.apple.launchd.Q6vdPwxaZL/Listeners";
+    "DYLD_FALLBACK_FRAMEWORK_PATH" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks";
+    "DYLD_FALLBACK_LIBRARY_PATH" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib";
+    "DYLD_FRAMEWORK_PATH" = "/Users/username/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator:/Users/litian/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/Developer/Library/PrivateFrameworks";
+    "DYLD_INSERT_LIBRARIES" = "";
+    "DYLD_LIBRARY_PATH" = "/Users/username/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator:/Users/litian/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/Developer/Library/PrivateFrameworks";
+    "DYLD_ROOT_PATH" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk";
+    "DYLD_SHARED_REGION" = avoid;
+    HOME = "/Users/username/Library/Developer/CoreSimulator/Devices/4316CA60-8040-446B-82D5-2851BD830D0B/data/Containers/Data/Application/42A887BC-AA73-4B70-89AE-FC2456F93825";
+    "IOS_SIMULATOR_SYSLOG_SOCKET" = "/private/tmp/com.apple.CoreSimulator.SimDevice.4316CA60-8040-446B-82D5-2851BD830D0B.launchd_sim/syslogsock";
+    "IPHONE_SHARED_RESOURCES_DIRECTORY" = "/Users/username/Library/Developer/CoreSimulator/Devices/4316CA60-8040-446B-82D5-2851BD830D0B/data";
+    "IPHONE_SIMULATOR_CLASS" = D11;
+    "IPHONE_SIMULATOR_ROOT" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk";
+    "IPHONE_TVOUT_EXTENDED_PROPERTIES" = "/Users/username/Library/Developer/CoreSimulator/Devices/4316CA60-8040-446B-82D5-2851BD830D0B/data/Library/Application Support/Simulator/extended_display.plist";
+    NSUnbufferedIO = YES;
+    "OS_ACTIVITY_DT_MODE" = YES;
+    PATH = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/sbin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/sbin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/local/bin";
+    "SIMULATOR_CAPABILITIES" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/CoreSimulator/Profiles/DeviceTypes/iPhone 7 Plus.simdevicetype/Contents/Resources/capabilities.plist";
+    "SIMULATOR_DEVICE_NAME" = "iPhone 7 Plus";
+    "SIMULATOR_EXTENDED_DISPLAY_PROPERTIES" = "/Users/username/Library/Developer/CoreSimulator/Devices/4316CA60-8040-446B-82D5-2851BD830D0B/data/Library/Application Support/Simulator/extended_display.plist";
+    "SIMULATOR_HID_SYSTEM_MANAGER" = "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/Resources/Platforms/iphoneos/SimulatorHID.framework";
+    "SIMULATOR_HOST_HOME" = "/Users/username";
+    "SIMULATOR_LEGACY_ASSET_SUFFIX" = iphone;
+    "SIMULATOR_LOG_ROOT" = "/Users/username/Library/Logs/CoreSimulator/4316CA60-8040-446B-82D5-2851BD830D0B";
+    "SIMULATOR_MAINSCREEN_HEIGHT" = 2208;
+    "SIMULATOR_MAINSCREEN_PITCH" = "461.000000";
+    "SIMULATOR_MAINSCREEN_SCALE" = "3.000000";
+    "SIMULATOR_MAINSCREEN_WIDTH" = 1242;
+    "SIMULATOR_MEMORY_WARNINGS" = "/Users/username/Library/Developer/CoreSimulator/Devices/4316CA60-8040-446B-82D5-2851BD830D0B/data/var/run/memory_warning_simulation";
+    "SIMULATOR_MODEL_IDENTIFIER" = "iPhone9,2";
+    "SIMULATOR_PLATFORM_RUNTIME_OVERLAY_ROOT" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/CoreSimulator/RuntimeOverlay";
+    "SIMULATOR_PRODUCT_CLASS" = D11;
+    "SIMULATOR_ROOT" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk";
+    "SIMULATOR_RUNTIME_BUILD_VERSION" = 14E269;
+    "SIMULATOR_RUNTIME_VERSION" = "10.3";
+    "SIMULATOR_SHARED_RESOURCES_DIRECTORY" = "/Users/username/Library/Developer/CoreSimulator/Devices/4316CA60-8040-446B-82D5-2851BD830D0B/data";
+    "SIMULATOR_UDID" = "4316CA60-8040-446B-82D5-2851BD830D0B";
+    "SIMULATOR_VERSION_INFO" = "CoreSimulator 375.21 - Device: iPhone 7 Plus - Runtime: iOS 10.3 (14E269) - DeviceType: iPhone 7 Plus";
+    "TESTMANAGERD_SIM_SOCK" = "/private/tmp/com.apple.launchd.1TOHvEAKRV/com.apple.testmanagerd.unix-domain.socket";
+    TMPDIR = "/Users/username/Library/Developer/CoreSimulator/Devices/4316CA60-8040-446B-82D5-2851BD830D0B/data/Containers/Data/Application/42A887BC-AA73-4B70-89AE-FC2456F93825/tmp";
+    XCInjectBundleInto = "/Users/username/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator/YoutubeSourceParserKit.app/YoutubeSourceParserKit";
+    "XCODE_DBG_XPC_EXCLUSIONS" = "com.apple.dt.xctestSymbolicator";
+    XCTestConfigurationFilePath = "/var/folders/h2/71_bt9mn6qg_0k5rqx13ng600000gn/T/com.apple.dt.XCTest/385F7A5B-5F9B-4AA4-83EA-B09F52C98372/remote-container/tmp/YoutubeSourceParserKit-385F7A5B-5F9B-4AA4-83EA-B09F52C98372.xctestconfiguration";
+    "XPC_FLAGS" = 0x0;
+    "XPC_SERVICE_NAME" = "UIKitApplication:com.dundaralp.YoutubeSourceParserKit[0x3462][16971]";
+    "XPC_SIMULATOR_LAUNCHD_NAME" = "com.apple.CoreSimulator.SimDevice.4316CA60-8040-446B-82D5-2851BD830D0B.launchd_sim";
+    "__XCODE_BUILT_PRODUCTS_DIR_PATHS" = "/Users/username/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator";
+    "__XPC_DYLD_FRAMEWORK_PATH" = "/Users/username/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator";
+    "__XPC_DYLD_LIBRARY_PATH" = "/Users/username/workspace/YoutubeSourceParserKit/Build/Products/Debug-iphonesimulator";
+}
+17:46:26.927 YoutubeSourceParserKit[53915:313995] <XCTWaiter: 0x60800001d8e0> entering wait loop for 5.00s
+17:46:26.939 YoutubeSourceParserKit[53915:314110] Got daemon protocol version 12
+17:46:26.939 YoutubeSourceParserKit[53915:314099] <XCTWaiter: 0x60800001d8e0>: cancelWaiting
+17:46:26.939 YoutubeSourceParserKit[53915:313995] <XCTWaiter: 0x60800001d8e0> done waiting
+17:46:26.939 YoutubeSourceParserKit[53915:313995] <XCTWaiter: 0x60800001d8e0> cleaning up Exchange protocol versions with daemon
+17:46:26.939 YoutubeSourceParserKit[53915:313995] Requesting socket
+17:46:26.939 YoutubeSourceParserKit[53915:313995] <XCTWaiter: 0x61800001d9b0> entering wait loop for 30.00s
+17:46:27.048 YoutubeSourceParserKit[53915:314111] <XCTWaiter: 0x61800001d9b0>: cancelWaiting
+17:46:27.048 YoutubeSourceParserKit[53915:313995] <XCTWaiter: 0x61800001d9b0> done waiting
+17:46:27.049 YoutubeSourceParserKit[53915:313995] <XCTWaiter: 0x61800001d9b0> cleaning up Socket for IDE session acquired
+17:46:27.049 YoutubeSourceParserKit[53915:313995] Creating transport with socket 12
+17:46:27.049 YoutubeSourceParserKit[53915:313995] Creating connection with transport <DTXSocketTransport: 0x600000108c10>
+17:46:27.049 YoutubeSourceParserKit[53915:313995] Creating the proxy channel with connection <DTXConnection 0x6000001eee00 : x1>
+17:46:27.050 YoutubeSourceParserKit[53915:313995] Messaging IDE proxy - _XCT_testBundleReadyWithProtocolVersion:22 minimumVersion:8
+17:46:27.050 YoutubeSourceParserKit[53915:313995] <XCTWaiter: 0x60000001d400> entering wait loop for 30.00s
+17:46:27.050 YoutubeSourceParserKit[53915:314121] _XCT_testBundleReadyWithProtocolVersion:minimumVersion: reply received
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testDictionaryFromQueryStringComponents]' started.
+17:46:27.076 YoutubeSourceParserKit[53915:314110] _IDE_startExecutingTestPlanWithProtocolVersion:22
+17:46:27.076 YoutubeSourceParserKit[53915:314121] <XCTWaiter: 0x60000001d400>: cancelWaiting
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testDictionaryFromQueryStringComponents]' passed (0.002 seconds).
+17:46:27.076 YoutubeSourceParserKit[53915:313995] <XCTWaiter: 0x60000001d400> done waiting
+17:46:27.076 YoutubeSourceParserKit[53915:313995] <XCTWaiter: 0x60000001d400> cleaning up IDE session ready for test plan
+17:46:27.083 Xcode[10490:48485] Starting test plan, clearing initialization timeout timer.
+17:46:27.078 YoutubeSourceParserKit[53915:313995] Loading test suite...
+17:46:27.079 YoutubeSourceParserKit[53915:313995] Finished loading test suite, took 0.001s
+17:46:27.079 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testBundleWillStart:]
+17:46:27.079 YoutubeSourceParserKit[53915:313995] Running suite...
+17:46:27.079 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testSuiteWillStart:]
+17:46:27.084 Xcode[10490:48485] _XCT_testSuite:Selected tests didStartAt:2017-06-20 09:46:27 +0000
+17:46:27.084 Xcode[10490:312455] (LOG ARBITER) Rotating message buffer with 2 messages.
+17:46:27.095 Xcode[10490:313680] (LOG ARBITER) Dumping buffered message data; 2 messages.
+17:46:27.099 Xcode[10490:313680] (LOG ARBITER) Dumping buffered message data; 0 messages.
+17:46:28.655 Xcode[10490:313476] (LOG ARBITER) Dumping buffered message data; 0 messages.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testFallbackHostControl]' started.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testFallbackHostControl]' passed (0.001 seconds).
+17:46:27.084 Xcode[10490:48485] _XCT_testSuite:YoutubeSourceParserKitTests didStartAt:2017-06-20 09:46:27 +0000
+17:46:27.080 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testSuiteWillStart:]
+17:46:27.080 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testDictionaryFromQueryStringComponents
+17:46:27.085 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testDictionaryFromQueryStringComponents
+17:46:27.095 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testDictionaryFromQueryStringComponents withStatus:passed duration:0.001700997352600098
+17:46:27.096 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testFallbackHostControl
+17:46:27.099 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testFallbackHostControl withStatus:passed duration:0.0005100369453430176
+17:46:27.100 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testH264videosWithYoutubeURL
+17:46:27.082 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:27.082 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testFallbackHostControl
+17:46:27.083 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:27.083 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testH264videosWithYoutubeURL
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testH264videosWithYoutubeURL]' started.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testH264videosWithYoutubeURL]' passed (1.571 seconds).
+17:46:28.654 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:28.655 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testH264videosWithYoutubeURL withStatus:passed duration:1.570629000663757
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testH264videosWithYoutubeURLBlock]' started.
+17:46:28.705 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testH264videosWithYoutubeURLBlock
+17:46:28.654 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testH264videosWithYoutubeURLBlock
+17:46:28.655 YoutubeSourceParserKit[53915:313995] -[YoutubeSourceParserKitTests testH264videosWithYoutubeURLBlock] starting to wait on 'Handler called'
+17:46:28.655 YoutubeSourceParserKit[53915:313995] <XCTWaiter: 0x61000001d710> entering wait loop for 2.00s
+17:46:28.656 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCase:didFailWithDescription:inFile:atLine:]
+17:46:28.705 Xcode[10490:48485] _XCT_testCaseDidFailForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testH264videosWithYoutubeURLBlock withMessage:XCTAssertNotNil failed - video dictionary is nil file:/Users/username/workspace/YoutubeSourceParserKit/YoutubeSourceParserKitTests/YoutubeSourceParserKitTests.swift line:151
+17:46:28.754 YoutubeSourceParserKit[53915:314099] <XCTWaiter: 0x61000001d710>: cancelWaiting
+/Users/username/workspace/YoutubeSourceParserKit/YoutubeSourceParserKitTests/YoutubeSourceParserKitTests.swift:151: error: -[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testH264videosWithYoutubeURLBlock] : XCTAssertNotNil failed - video dictionary is nil
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testH264videosWithYoutubeURLBlock]' failed (0.100 seconds).
+17:46:28.754 YoutubeSourceParserKit[53915:313995] <XCTWaiter: 0x61000001d710> done waiting
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testInfoUrl]' started.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testInfoUrl]' passed (0.001 seconds).
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testInvalidURLs1]' started.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testInvalidURLs1]' passed (0.001 seconds).
+17:46:28.754 YoutubeSourceParserKit[53915:313995] <XCTWaiter: 0x61000001d710> cleaning up Handler called
+17:46:28.754 YoutubeSourceParserKit[53915:313995] -[YoutubeSourceParserKitTests testH264videosWithYoutubeURLBlock] done waiting on 'Handler called'
+17:46:28.754 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:28.770 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testH264videosWithYoutubeURLBlock withStatus:failed duration:0.1000850200653076
+17:46:28.775 Xcode[10490:313680] (LOG ARBITER) Dumping buffered message data; 0 messages.
+17:46:28.775 Xcode[10490:313680] (LOG ARBITER) Dumping buffered message data; 0 messages.
+17:46:28.775 Xcode[10490:314126] (LOG ARBITER) Dumping buffered message data; 0 messages.
+17:46:28.776 Xcode[10490:314126] (LOG ARBITER) Dumping buffered message data; 0 messages.
+17:46:28.776 Xcode[10490:314126] (LOG ARBITER) Dumping buffered message data; 0 messages.
+17:46:28.776 Xcode[10490:314126] (LOG ARBITER) Dumping buffered message data; 0 messages.
+17:46:28.827 Xcode[10490:312455] (LOG ARBITER) Dumping buffered message data; 0 messages.
+17:46:28.827 Xcode[10490:312455] (LOG ARBITER) Dumping buffered message data; 0 messages.
+17:46:28.827 Xcode[10490:312455] (LOG ARBITER) Dumping buffered message data; 0 messages.
+17:46:28.827 Xcode[10490:313680] (LOG ARBITER) Dumping buffered message data; 0 messages.
+17:46:28.856 Xcode[10490:314124] (LOG ARBITER) Dumping buffered message data; 0 messages.
+17:46:28.859 Xcode[10490:313487] (LOG ARBITER) Dumping buffered message data; 0 messages.
+17:46:28.863 Xcode[10490:313487] (LOG ARBITER) Dumping buffered message data; 0 messages.
+17:46:28.775 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testInfoUrl
+17:46:28.754 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testInfoUrl
+17:46:28.755 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:28.775 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testInfoUrl withStatus:passed duration:0.0005949735641479492
+17:46:28.775 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testInvalidURLs1
+17:46:28.755 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testInvalidURLs1
+17:46:28.775 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testInvalidURLs1 withStatus:passed duration:0.0005159974098205566
+17:46:28.775 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testInvalidURLs2
+17:46:28.756 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:28.756 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testInvalidURLs2
+17:46:28.757 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:28.775 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testInvalidURLs2 withStatus:passed duration:0.0009369850158691406
+17:46:28.775 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testInvalidURLs3
+17:46:28.757 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testInvalidURLs3
+17:46:28.758 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:28.775 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testInvalidURLs3 withStatus:passed duration:0.0006260275840759277
+17:46:28.775 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testInvalidURLs4
+17:46:28.758 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testInvalidURLs4
+17:46:28.759 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:28.775 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testInvalidURLs4 withStatus:passed duration:0.000514984130859375
+17:46:28.776 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testIsLiveVideoTest
+17:46:28.759 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testIsLiveVideoTest
+17:46:28.760 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:28.776 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testIsLiveVideoTest withStatus:passed duration:0.0004650354385375977
+17:46:28.760 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testItagControl
+17:46:28.776 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testItagControl
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testInvalidURLs2]' started.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testInvalidURLs2]' passed (0.001 seconds).
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testInvalidURLs3]' started.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testInvalidURLs3]' passed (0.001 seconds).
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testInvalidURLs4]' started.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testInvalidURLs4]' passed (0.001 seconds).
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testIsLiveVideoTest]' started.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testIsLiveVideoTest]' passed (0.000 seconds).
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testItagControl]' started.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testItagControl]' passed (0.000 seconds).
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testStringByDecodingURLFormat]' started.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testStringByDecodingURLFormat]' passed (0.001 seconds).
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testUserAgent]' started.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testUserAgent]' passed (0.000 seconds).
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testVideoQuality]' started.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testVideoQuality]' passed (0.000 seconds).
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testVideoTypeControl]' started.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testVideoTypeControl]' passed (0.000 seconds).
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testYoutubeIDFromMobileYoutubeURL]' started.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testYoutubeIDFromMobileYoutubeURL]' passed (0.001 seconds).
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testYoutubeIDFromYoutubeURL]' started.
+Test Case '-[YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testYoutubeIDFromYoutubeURL]' passed (0.001 seconds).
+Test Suite 'YoutubeSourceParserKitTests' failed at 2017-06-20 17:46:28.797.
+	 Executed 17 tests, with 1 failure (0 unexpected) in 1.681 (1.717) seconds
+Test Suite 'YoutubeSourceParserKit.xctest' failed at 2017-06-20 17:46:28.797.
+	 Executed 17 tests, with 1 failure (0 unexpected) in 1.681 (1.717) seconds
+17:46:28.770 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:28.826 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testItagControl withStatus:passed duration:0.0004630088806152344
+17:46:28.827 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testStringByDecodingURLFormat
+17:46:28.770 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testStringByDecodingURLFormat
+17:46:28.771 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:28.827 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testStringByDecodingURLFormat withStatus:passed duration:0.0006539821624755859
+17:46:28.771 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testUserAgent
+17:46:28.827 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testUserAgent
+17:46:28.772 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:28.827 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testUserAgent withStatus:passed duration:0.0004790425300598145
+17:46:28.772 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testVideoQuality
+17:46:28.827 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testVideoQuality
+17:46:28.827 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testVideoQuality withStatus:passed duration:0.0004850029945373535
+17:46:28.772 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:28.827 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testVideoTypeControl
+17:46:28.773 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testVideoTypeControl
+17:46:28.794 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:28.856 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testVideoTypeControl withStatus:passed duration:0.0004709959030151367
+17:46:28.795 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testYoutubeIDFromMobileYoutubeURL
+17:46:28.857 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testYoutubeIDFromMobileYoutubeURL
+17:46:28.796 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:28.859 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testYoutubeIDFromMobileYoutubeURL withStatus:passed duration:0.0008209943771362305
+17:46:28.796 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseWillStart:] YoutubeSourceParserKitTests.YoutubeSourceParserKitTests testYoutubeIDFromYoutubeURL
+17:46:28.860 Xcode[10490:48485] _XCT_testCaseDidStartForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testYoutubeIDFromYoutubeURL
+17:46:28.797 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testCaseDidFinish:]
+17:46:28.863 Xcode[10490:48485] _XCT_testCaseDidFinishForTestClass:YoutubeSourceParserKitTests.YoutubeSourceParserKitTests method:testYoutubeIDFromYoutubeURL withStatus:passed duration:0.0006589889526367188
+17:46:28.797 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testSuiteDidFinish:]
+17:46:28.864 Xcode[10490:48485] _XCT_testSuite:YoutubeSourceParserKitTests didFinishAt:2017-06-20 09:46:28 +0000 runCount:17 withFailures:1 unexpected:0 testDuration:1.680611073970795 totalDuration:1.716729998588562
+17:46:28.797 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testSuiteDidFinish:]
+17:46:28.864 Xcode[10490:48485] _XCT_testSuite:YoutubeSourceParserKit.xctest didFinishAt:2017-06-20 09:46:28 +0000 runCount:17 withFailures:1 unexpected:0 testDuration:1.680611073970795 totalDuration:1.71739000082016
+17:46:28.826 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testSuiteDidFinish:]
+17:46:28.908 Xcode[10490:48485] _XCT_testSuite:Selected tests didFinishAt:2017-06-20 09:46:28 +0000 runCount:17 withFailures:1 unexpected:0 testDuration:1.680611073970795 totalDuration:1.718452036380768
+17:46:28.826 YoutubeSourceParserKit[53915:313995] Finished running suite.
+17:46:28.908 Xcode[10490:48485] -[XCTTestRunnerSession _XCT_didFinishExecutingTestPlan]_block_invoke
+17:46:28.826 YoutubeSourceParserKit[53915:313995] -[XCTRunnerIDESession testBundleDidFinish:], Flushing connection to IDE...
+17:46:28.826 YoutubeSourceParserKit[53915:313995] Calling completion.
+17:46:28.827 YoutubeSourceParserKit[53915:313995] <XCTWaiter: 0x60000001ddb0> entering wait loop for 15.00s
+17:46:28.959 Xcode[10490:48485] _finishWithError:(null) didCancel: 0
