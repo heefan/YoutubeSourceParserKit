@@ -66,25 +66,31 @@ open class Youtube: NSObject {
      @param youtubeURL the the complete youtube video url, either youtu.be or youtube.com
      @return string with desired youtube id
      */
-    open static func youtubeIDFromYoutubeURL(_ youtubeURL: URL) -> String? {
-        let youtubeHost = youtubeURL.host
+    open static func youtubeIDFromYoutubeURL(_ youtubeURL: URL) -> String?
+    {
+        guard let  youtubeHost = youtubeURL.host else {
+            return nil
+        }
+        
         let youtubePathComponents = youtubeURL.pathComponents
-        let youtubeAbsoluteString = youtubeURL.absoluteString
+        let youtubeAbsoulateString = youtubeURL.absoluteString
+        
         
         if youtubeHost == "youtu.be" as String? {
             return youtubePathComponents[1]
-        } else if youtubeAbsoluteString.range(of: "www.youtube.com/embed") != nil {
+        } else if youtubeAbsoulateString.range(of:"www.youtube.com/embed") != nil {
             return youtubePathComponents[2]
         } else if youtubeHost == "youtube.googleapis.com" ||
             youtubeURL.pathComponents.first == "www.youtube.com" as String? {
             return youtubePathComponents[2]
-        } else if let
-            queryString = youtubeURL.dictionaryForQueryString(),
-            let searchParam = queryString["v"] as? String {
+        } else if
+            let queryString = youtubeURL.dictionaryForQueryString(),
+            let searchParam = queryString["v"] as? String
+        {
             return searchParam
         }
         
-        return nil
+        return nil;
     }
     /**
      Method for retreiving a iOS supported video link
