@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+@testable import YoutubeSourceParserKit
 
 class YoutubeSourceParserKitTests: XCTestCase {
     
@@ -40,7 +41,7 @@ class YoutubeSourceParserKitTests: XCTestCase {
   }
 
   func testInvalidURLs1() {
-    let sampleLink = NSURL(string: "?v=1hZ98an9wjo")!
+    let sampleLink = URL(string: "?v=1hZ98an9wjo")!
     XCTAssertNil(Youtube.youtubeIDFromYoutubeURL(sampleLink), "Youtube ID is not nil")
     if let youtubeID = Youtube.youtubeIDFromYoutubeURL(sampleLink) {
       XCTAssertEqual(youtubeID, "1hZ98an9wjo", "Youtube ID not same")
@@ -48,7 +49,7 @@ class YoutubeSourceParserKitTests: XCTestCase {
   }
 
   func testInvalidURLs2() {
-    let sampleLink = NSURL(string: "?v=")!
+    let sampleLink = URL(string: "?v=")!
     XCTAssertNil(Youtube.youtubeIDFromYoutubeURL(sampleLink), "Youtube ID is not nil")
     if let youtubeID = Youtube.youtubeIDFromYoutubeURL(sampleLink) {
       XCTAssertEqual(youtubeID, "", "Youtube ID not same")
@@ -56,7 +57,7 @@ class YoutubeSourceParserKitTests: XCTestCase {
   }
 
   func testInvalidURLs3() {
-    let sampleLink = NSURL(string: "v=1hZ98an9wjo")!
+    let sampleLink = URL(string: "v=1hZ98an9wjo")!
     XCTAssertNil(Youtube.youtubeIDFromYoutubeURL(sampleLink), "Youtube ID is not nil")
     if let youtubeID = Youtube.youtubeIDFromYoutubeURL(sampleLink) {
       XCTAssertEqual(youtubeID, "v=1hZ98an9wjo", "Youtube ID not same")
@@ -64,7 +65,7 @@ class YoutubeSourceParserKitTests: XCTestCase {
   }
 
   func testInvalidURLs4() {
-    let sampleLink = NSURL(string: "v1hZ98an9wjo")!
+    let sampleLink = URL(string: "v1hZ98an9wjo")!
     XCTAssertNil(Youtube.youtubeIDFromYoutubeURL(sampleLink), "Youtube ID is not nil")
     if let youtubeID = Youtube.youtubeIDFromYoutubeURL(sampleLink) {
       XCTAssertEqual(youtubeID, "v1hZ98an9wjo", "Youtube ID not same")
@@ -72,7 +73,7 @@ class YoutubeSourceParserKitTests: XCTestCase {
   }
 
   func testYoutubeIDFromYoutubeURL() {
-    let sampleLink = NSURL(string: "http://www.youtube.com/watch?v=1hZ98an9wjo")!
+    let sampleLink = URL(string: "http://www.youtube.com/watch?v=1hZ98an9wjo")!
     XCTAssertNotNil(Youtube.youtubeIDFromYoutubeURL(sampleLink), "Youtube ID is nil")
     if let youtubeID = Youtube.youtubeIDFromYoutubeURL(sampleLink) {
       XCTAssertEqual(youtubeID, "1hZ98an9wjo", "Youtube ID not same")
@@ -80,7 +81,7 @@ class YoutubeSourceParserKitTests: XCTestCase {
   }
 
   func testYoutubeIDFromMobileYoutubeURL() {
-    let sampleLink = NSURL(string: "https://m.youtube.com/#/watch?v=1hZ98an9wjo")!
+    let sampleLink = URL(string: "https://m.youtube.com/#/watch?v=1hZ98an9wjo")!
     XCTAssertNotNil(Youtube.youtubeIDFromYoutubeURL(sampleLink), "Youtube ID is nil")
     if let youtubeID = Youtube.youtubeIDFromYoutubeURL(sampleLink) {
       XCTAssertEqual(youtubeID, "1hZ98an9wjo", "Youtube ID not same")
@@ -106,7 +107,7 @@ class YoutubeSourceParserKitTests: XCTestCase {
   }
 
   func testVideoQuality(){
-    if let videoURL = NSURL(string: "http://www.youtube.com/watch?v=1hZ98an9wjo") {
+    if let videoURL = URL(string: "http://www.youtube.com/watch?v=1hZ98an9wjo") {
       Youtube.h264videosWithYoutubeURL(videoURL, completion: { (videoInfo, error) -> Void in
         XCTAssertNotNil(videoInfo, "video dictionary is nil")
         if let info = videoInfo as [String:AnyObject]? {
@@ -119,7 +120,7 @@ class YoutubeSourceParserKitTests: XCTestCase {
   }
 
   func testItagControl(){
-    if let videoURL = NSURL(string: "http://www.youtube.com/watch?v=1hZ98an9wjo") {
+    if let videoURL = URL(string: "http://www.youtube.com/watch?v=1hZ98an9wjo") {
       Youtube.h264videosWithYoutubeURL(videoURL, completion: { (videoInfo, error) -> Void in
         XCTAssertNotNil(videoInfo, "video dictionary is nil")
         if let info = videoInfo as [String:AnyObject]? {
@@ -132,7 +133,7 @@ class YoutubeSourceParserKitTests: XCTestCase {
   }
 
   func testVideoTypeControl(){
-    if let videoURL = NSURL(string: "http://www.youtube.com/watch?v=1hZ98an9wjo") {
+    if let videoURL = URL(string: "http://www.youtube.com/watch?v=1hZ98an9wjo") {
       Youtube.h264videosWithYoutubeURL(videoURL, completion: { (videoInfo, error) -> Void in
         XCTAssertNotNil(videoInfo, "video dictionary is nil")
         if let info = videoInfo as [String:AnyObject]? {
@@ -145,7 +146,7 @@ class YoutubeSourceParserKitTests: XCTestCase {
   }
 
   func testFallbackHostControl(){
-    if let videoURL = NSURL(string: "http://www.youtube.com/watch?v=1hZ98an9wjo") {
+    if let videoURL = URL(string: "http://www.youtube.com/watch?v=1hZ98an9wjo") {
       Youtube.h264videosWithYoutubeURL(videoURL, completion: { (videoInfo, error) -> Void in
         XCTAssertNotNil(videoInfo, "video dictionary is nil")
         if let info = videoInfo as [String:AnyObject]? {
@@ -158,7 +159,7 @@ class YoutubeSourceParserKitTests: XCTestCase {
   }
 
   func testIsLiveVideoTest() {
-    if let liveVideoURL = NSURL(string: "https://www.youtube.com/watch?v=rxGoGg7n77A"){
+    if let liveVideoURL = URL(string: "https://www.youtube.com/watch?v=rxGoGg7n77A"){
       Youtube.h264videosWithYoutubeURL(liveVideoURL, completion: { (videoInfo, error) -> Void in
         XCTAssertNotNil(videoInfo, "video dictionary is nil")
         if let info = videoInfo as [String:AnyObject]? {
@@ -177,8 +178,8 @@ class YoutubeSourceParserKitTests: XCTestCase {
   }
 
   func testH264videosWithYoutubeURLBlock(){
-    let expectation: XCTestExpectation = self.expectationWithDescription("Handler called")
-    if let videoURL = NSURL(string: "http://www.youtube.com/watch?v=1hZ98an9wjo") {
+    let expectation: XCTestExpectation = self.expectation(description: "Handler called")
+    if let videoURL = URL(string: "http://www.youtube.com/watch?v=1hZ98an9wjo") {
       Youtube.h264videosWithYoutubeURL(videoURL, completion: { (videoInfo, error) -> Void in
         expectation.fulfill()
         if let info = videoInfo as [String:AnyObject]? {
@@ -187,7 +188,7 @@ class YoutubeSourceParserKitTests: XCTestCase {
           }
         }
       })
-      self.waitForExpectationsWithTimeout(2, handler: nil)
+      self.waitForExpectations(timeout: 2, handler: nil)
     }
 
   }
